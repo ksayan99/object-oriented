@@ -10,7 +10,7 @@ class derived extends base{
     public $name = 'Sayan From Derived';
 }
 class child extends base{
-    public function fx($a, $b){
+    public function calc($a, $b){
         return ' & Child Result '.$a * $b;
     }
 }
