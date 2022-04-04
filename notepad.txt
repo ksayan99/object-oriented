@@ -1,0 +1,18 @@
+
+git config --global user.email 'youremail'
+git config --global user.name 'myusername'
+git init // initialize github local repo
+git remote add repolink // connect local repo with github
+git status // checking current status
+git add . // add all files to staging
+git commit -m 'msg' // ready commit to push
+git commit -f // match commit with flow
+git push -u origin master // push to master
+git pull repolink // pull files from master
+git reset . // undo changes on staging
+git log // list of all recent commits
+git reset HEAD~1 // delete newest commit
+git reset 'HEAD@{node number}' // delete particular commit
+git reflog // check commit activities
+git checkout . // action of swapping
+git diff filename // compare old & new files
