@@ -16,3 +16,4 @@ git reset 'HEAD@{node number}' // delete particular commit
 git reflog // check commit activities
 git checkout . // action of swapping
 git diff filename // compare old & new files
+git merge repolink // merge all files from master
