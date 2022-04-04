@@ -3,7 +3,7 @@
 class base{
     public $name;
     public function show(){
-        echo $this->$name.'From Base';
+        echo $this->name.'From Base';
     }
 }
 class derived extends base{
@@ -12,11 +12,11 @@ class derived extends base{
     }
 }
 $obj = new base();
-$obj->$name = 'Sayan';
+$obj->name = 'Sayan ';
 $obj->show();
 
-$obj = new derived();
-$obj->$name = 'Sayan';
-$obj->visible();
+$obj2 = new derived();
+$obj2->name = 'Sayan ';
+$obj2->visible();
 
 ?>

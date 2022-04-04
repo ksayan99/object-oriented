@@ -3,7 +3,7 @@
 class base{
     protected $name;
     protected function show(){
-        echo $this->$name;
+        echo $this->name = 'Gipsy';
     }
 }
 class derived extends base{
@@ -12,7 +12,6 @@ class derived extends base{
     }
 }
 $obj = new derived();
-$obj->$name = 'Gipsy';
 $obj->get();
 
 ?>
