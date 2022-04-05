@@ -16,7 +16,6 @@ git reset HEAD~1 // delete newest commit
 git reset --hard HEAD~1 // delete changes on repo along with commit
 git reset 'HEAD@{node number}' // delete particular commit
 git reflog // check commit activities
-git checkout . // action of swapping
 git diff filename // compare old & new files
 touch .gitignore // create gitignore file
 git rm --cached filename // remove track history for the file added to .gitignore
