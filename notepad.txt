@@ -1,6 +1,7 @@
 
 git config --global user.email 'youremail'
 git config --global user.name 'myusername'
+git --version // checks current version
 git init // initialize github local repo
 git remote add repolink // connect local repo with github
 git status // checking current status
@@ -12,8 +13,19 @@ git pull repolink // pull files from master
 git reset . // undo changes on staging
 git log // list of all recent commits
 git reset HEAD~1 // delete newest commit
+git reset --hard HEAD~1 // delete changes on repo along with commit
 git reset 'HEAD@{node number}' // delete particular commit
 git reflog // check commit activities
 git checkout . // action of swapping
 git diff filename // compare old & new files
-git merge repolink // merge all files from master
+touch .gitignore // create gitignore file
+git rm --cached filename // remove track history for the file added to .gitignore
+
+git branch // display all available branches
+git branch branchname // creates a new branching
+git branch -d branchname // delete local branch
+git push origin --delete name // delete from remote
+git checkout branchname // switch bewtween branches
+git push origin branchname // push to sub-branch
+1st switch to master then run this comman
+git merge branchname // marge current brach & master
